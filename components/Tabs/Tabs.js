@@ -1,16 +1,16 @@
 //To add new articles:
-var myArticle1 = document.createElement('div');  
-myArticle1.setAttribute("class", "card"); 
-myArticle1.setAttribute("data-tab", "technology");     
-myArticle1.innerHTML = "Aenean tempus laoreet orci. Integer vulputate id lorem non rutrum. "; 
+// var myArticle1 = document.createElement('div');  
+// myArticle1.setAttribute("class", "card"); 
+// myArticle1.setAttribute("data-tab", "technology");     
+// myArticle1.innerHTML = "Aenean tempus laoreet orci. Integer vulputate id lorem non rutrum. "; 
 
-var myArticle2 = document.createElement('div');  
-myArticle2.setAttribute("class", "card"); 
-myArticle2.setAttribute("data-tab", "javascript");      
-myArticle2.innerHTML = "Fusce quis lorem tempor, dictum quam quis, tincidunt nunc. "; 
+// var myArticle2 = document.createElement('div');  
+// myArticle2.setAttribute("class", "card"); 
+// myArticle2.setAttribute("data-tab", "javascript");      
+// myArticle2.innerHTML = "Fusce quis lorem tempor, dictum quam quis, tincidunt nunc. "; 
 
-document.getElementsByClassName("cards-container")[0].appendChild(myArticle1); 
-document.getElementsByClassName("cards-container")[0].appendChild(myArticle2); 
+// document.getElementsByClassName("cards-container")[0].appendChild(myArticle1); 
+// document.getElementsByClassName("cards-container")[0].appendChild(myArticle2); 
 
 
 class TabLink {
