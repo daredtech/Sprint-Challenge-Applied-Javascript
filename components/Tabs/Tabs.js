@@ -1,3 +1,18 @@
+//To add new articles:
+var myArticle1 = document.createElement('div');  
+myArticle1.setAttribute("class", "card"); 
+myArticle1.setAttribute("data-tab", "technology");     
+myArticle1.innerHTML = "Aenean tempus laoreet orci. Integer vulputate id lorem non rutrum. "; 
+
+var myArticle2 = document.createElement('div');  
+myArticle2.setAttribute("class", "card"); 
+myArticle2.setAttribute("data-tab", "javascript");      
+myArticle2.innerHTML = "Fusce quis lorem tempor, dictum quam quis, tincidunt nunc. "; 
+
+document.getElementsByClassName("cards-container")[0].appendChild(myArticle1); 
+document.getElementsByClassName("cards-container")[0].appendChild(myArticle2); 
+
+
 class TabLink {
   constructor(tabElement){
     // assign this.tabElement to the tabElement DOM reference
@@ -13,7 +28,7 @@ class TabLink {
     // Check to see if this.tabData is equal to 'all'
     if(this.tabData === 'all'){
       // If `all` is true, select all cards regardless of their data attribute values
-      this.cards = document.querySelector('.card'); 
+      this.cards = document.querySelectorAll('.card'); 
     } else {
       // else if `all` is false, only select the cards with matching this.tabData values
       //valueTabData = this.tabData;
@@ -76,8 +91,6 @@ let tabs = document.querySelectorAll('.tab');
 
 
 Array.from(tabs).forEach(item => new TabLink(item));
-
-
 
 
 
